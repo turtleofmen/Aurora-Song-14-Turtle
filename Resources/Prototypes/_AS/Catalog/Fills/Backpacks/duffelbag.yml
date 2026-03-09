@@ -1,0 +1,36 @@
+#region SLE
+
+- type: entity
+  parent: ASClothingBackpackDuffelSLENavy
+  id: ASClothingBackpackDuffelSLETrackingBundle
+  name: tracking bundle
+  description: "All the equipment needed to track almost anything, careful tracking people"
+  components:
+  - type: StorageFill
+    contents:
+      - id: NFWeaponLauncherGrenadeNfsd
+      - id: NFBoxDartsTracking
+
+- type: entity
+  parent: ASClothingBackpackDuffelSLENavy
+  id: ASClothingBackpackDuffelSLEEmpBundle
+  name: SLE Lake EMP bundle
+  description: "An old repainted China-Lake grenade launcher bundled with 10 rounds of EMP."
+  components:
+  - type: StorageFill
+    contents:
+      - id: NFWeaponLauncherGrenadeNfsd
+      - id: NFGrenadeEMP
+        amount: 10
+
+- type: entity
+  parent: NFClothingBackpackDuffelColorGreen
+  id: NFClothingBackpackDuffelColorGreenAgriBundle
+  name: green duffel
+  suffix: Filled, Agriculture Bundle
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxAgrichem
+      - id: CannabisSeeds
+      - id: NettleSeeds
