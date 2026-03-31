@@ -15,8 +15,8 @@
   description: A large, specialized line tanker for the express purpose of gathering and moving large amounts of gas.
   price: 78000
   category: Large
-  group: Expedition
-  shuttlePath: /Maps/_AS/Shuttles/Expedition/baron.yml
+  group: Damascus
+  shuttlePath: /Maps/_AS/Shuttles/Damascus/baron.yml
   guidebookPage: Null
   class:
   - Expedition
@@ -27,7 +27,7 @@
 - type: gameMap
   id: Baron
   mapName: 'KC Baron'
-  mapPath: /Maps/_AS/Shuttles/Expedition/baron.yml
+  mapPath: /Maps/_AS/Shuttles/Damascus/baron.yml
   minPlayers: 0
   stations:
     Baron:
