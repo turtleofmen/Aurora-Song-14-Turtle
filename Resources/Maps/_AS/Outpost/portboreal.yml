@@ -1,16 +1,16 @@
 meta:
   format: 7
-  category: Grid
+  category: Map
   engineVersion: 267.4.0
   forkId: ""
   forkVersion: ""
-  time: 04/05/2026 06:45:02
-  entityCount: 12828
-maps: []
+  time: 04/05/2026 06:58:10
+  entityCount: 12829
+maps:
+- 12829
 grids:
 - 1
-orphans:
-- 1
+orphans: []
 nullspace: []
 tilemap:
   1: Space
@@ -104,7 +104,7 @@ entities:
       name: PortBoreal
     - type: Transform
       pos: -0.44791666,-0.48958334
-      parent: invalid
+      parent: 12829
     - type: MapGrid
       chunks:
         0,0:
@@ -4898,9 +4898,9 @@ entities:
             2: 17476
           -5,-10:
             2: 72
-            5: 34816
+            4: 34816
           -4,-10:
-            4: 8704
+            5: 8704
             0: 34952
           -4,-12:
             2: 17476
@@ -5648,8 +5648,8 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
-          - 0
           - 6666.982
+          - 0
           - 0
           - 0
           - 0
@@ -5663,8 +5663,8 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
-          - 6666.982
           - 0
+          - 6666.982
           - 0
           - 0
           - 0
@@ -5685,6 +5685,18 @@ entities:
       doNotCull: True
       trackOnInit: True
     - type: DeletionCensusExempt
+  - uid: 12829
+    components:
+    - type: MetaData
+      name: Map Entity
+    - type: Transform
+    - type: Map
+      mapPaused: True
+    - type: GridTree
+    - type: Broadphase
+    - type: OccluderTree
+    - type: Parallax
+      parallax: FrontierStation
 - proto: ActionToggleLight
   entities:
   - uid: 9896
@@ -6822,7 +6834,7 @@ entities:
       pos: 21.5,-5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -10009.854
+      secondsUntilStateChange: -10584.148
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7293,7 +7305,7 @@ entities:
       pos: 37.5,-16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -12876.1045
+      secondsUntilStateChange: -13450.399
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7589,7 +7601,7 @@ entities:
       pos: -19.5,-19.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -12916.305
+      secondsUntilStateChange: -13490.6
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7747,7 +7759,7 @@ entities:
       pos: -75.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -13789.57
+      secondsUntilStateChange: -14363.865
       state: Opening
     - type: Docking
       name: dock-label-station-one-b
@@ -7761,7 +7773,7 @@ entities:
       pos: -75.5,0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -13789.97
+      secondsUntilStateChange: -14364.265
       state: Opening
     - type: Docking
       name: dock-label-station-one-b
