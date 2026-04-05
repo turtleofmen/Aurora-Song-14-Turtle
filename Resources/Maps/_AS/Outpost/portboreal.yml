@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.4.0
   forkId: ""
   forkVersion: ""
-  time: 04/05/2026 08:16:48
-  entityCount: 12960
+  time: 04/05/2026 08:32:33
+  entityCount: 12959
 maps:
 - 439
 grids:
@@ -2991,6 +2991,11 @@ entities:
           decals:
             3239: -18,26
         - node:
+            color: '#0F28546C'
+            id: WarnCornerGreyscaleNW
+          decals:
+            3242: -16,24
+        - node:
             color: '#0F2854FF'
             id: WarnCornerGreyscaleNW
           decals:
@@ -3125,6 +3130,11 @@ entities:
             3236: -17,26
             3237: -16,26
             3238: -15,26
+        - node:
+            color: '#0F28546C'
+            id: WarnLineGreyscaleN
+          decals:
+            3243: -15,24
         - node:
             color: '#0F2854FF'
             id: WarnLineGreyscaleN
@@ -6870,7 +6880,7 @@ entities:
       pos: 21.5,-5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -14924.954
+      secondsUntilStateChange: -15013.071
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7341,7 +7351,7 @@ entities:
       pos: 37.5,-16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17791.205
+      secondsUntilStateChange: -17879.322
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7637,7 +7647,7 @@ entities:
       pos: -19.5,-19.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17831.404
+      secondsUntilStateChange: -17919.521
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7795,7 +7805,7 @@ entities:
       pos: -75.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -18704.67
+      secondsUntilStateChange: -18792.787
       state: Opening
     - type: Docking
       name: dock-label-station-one-b
@@ -7809,7 +7819,7 @@ entities:
       pos: -75.5,0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -18705.07
+      secondsUntilStateChange: -18793.188
       state: Opening
     - type: Docking
       name: dock-label-station-one-b
@@ -8298,7 +8308,7 @@ entities:
       pos: 35.5,6.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -1211.9122
+      secondsUntilStateChange: -1300.0293
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -38905,14 +38915,6 @@ entities:
     components:
     - type: Transform
       pos: -19.224627,12.506384
-      parent: 1
-- proto: FirelockEdge
-  entities:
-  - uid: 10151
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -22.5,-19.5
       parent: 1
 - proto: FirelockGlass
   entities:
