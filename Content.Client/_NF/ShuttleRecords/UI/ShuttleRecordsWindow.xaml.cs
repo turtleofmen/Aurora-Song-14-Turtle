@@ -149,6 +149,10 @@ public sealed partial class ShuttleRecordsWindow : FancyWindow
         var viewState = new ShuttleRecordDetailsControl.ViewState(
             shuttleName: _loc.GetString(messageId: "shuttle-records-shuttle-name-label",
                 arg: ("name", shuttleRecord.Name + " " + shuttleRecord.Suffix)),
+            // Start Aurora's Song - Add hull type
+            shuttleHullType: _loc.GetString(messageId: "shuttle-records-shuttle-hull-type-label",
+                arg: ("name", shuttleRecord.HullType)),
+            // End Aurora's Song
             shuttleOwnerName: _loc.GetString(messageId: "shuttle-records-shuttle-owner-label",
                 arg: ("owner", shuttleRecord.OwnerName)),
             shuttlePrice: _loc.GetString(messageId: "shuttle-records-shuttle-price-label",
@@ -167,7 +171,7 @@ public sealed partial class ShuttleRecordsWindow : FancyWindow
             if (ButtonResetOn is null)
             {
                 ButtonResetOn = _gameTiming.CurTime.Add(TimeSpan.FromSeconds(3));
-                control.CopyDeedButton.AddStyleClass(StyleBase.ButtonCaution);
+                control.CopyDeedButton.AddStyleClass(StyleNano.ButtonCaution); // Aurora's Song - TODO: find the non deprecated version
                 control.CopyDeedButtonLabel.Text = Loc.GetString("shuttle-records-transaction-confirm");
                 return;
             }
